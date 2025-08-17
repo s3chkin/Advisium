@@ -1,0 +1,24 @@
+# WordPress core
+wp-admin/
+wp-includes/
+
+# Configuration (contains passwords and DB credentials)
+wp-config.php
+
+# Uploaded media files
+wp-content/uploads/
+
+# Ignore all themes except your own
+wp-content/themes/*
+!wp-content/themes/Advisium   # replace "Advisium" with your theme name
+
+# Ignore all plugins except your custom ones
+wp-content/plugins/*
+!wp-content/plugins/your_plugin   # replace with your plugin name if you have one
+
+# System and temporary files
+*.log
+*.sql
+*.tar.gz
+.DS_Store
+
