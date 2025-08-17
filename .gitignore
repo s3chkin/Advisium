@@ -1,24 +1,51 @@
-# WordPress core
-wp-admin/
-wp-includes/
+# System files
+.DS_Store
+Thumbs.db
 
-# Configuration (contains passwords and DB credentials)
-wp-config.php
-
-# Uploaded media files
-wp-content/uploads/
-
-# Ignore all themes except your own
-wp-content/themes/*
-!wp-content/themes/Advisium   # replace "Advisium" with your theme name
-
-# Ignore all plugins except your custom ones
-wp-content/plugins/*
-!wp-content/plugins/your_plugin   # replace with your plugin name if you have one
-
-# System and temporary files
+# Logs
 *.log
 *.sql
-*.tar.gz
-.DS_Store
+*.sqlite
 
+# OS / Editor files
+*.swp
+*.swo
+*.tmp
+*.bak
+*.orig
+
+# Composer dependencies
+/vendor/
+
+# Node dependencies
+/node_modules/
+
+# WordPress core files (keep only wp-content and config)
+/wp-admin/
+/wp-includes/
+index.php
+license.txt
+readme.html
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-config-sample.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+
+# WordPress content – keep themes/plugins but ignore uploads
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+
+# Sensitive files
+wp-config.php
+.htaccess
+.env
